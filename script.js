@@ -2,6 +2,10 @@
     var cnv = document.querySelector('canvas');
     var ctx = cnv.getContext('2d');
     
+    var mainFont = 'bold 48px monospace';
+    var font = 'normal 32px Verdana';
+    var smallFont = 'normal 26px Verdana';
+
     var movLeft, movUp, movRight, movDown = false;
     
     var paredes = [];
@@ -222,10 +226,63 @@
         }
     }
 
+    function telaInicio() {
+        
+        ctx.fillStyle = "black";
+        ctx.fillRect(0, 0, 640, 640);
+        
+        ctx.fillStyle = "white";
+
+        ctx.font = mainFont;
+        ctx.fillText('Labirinto-jogo', 140, 100);
+        
+        ctx.font = smallFont;
+        ctx.fillText('para mover o personagem precione:', 90, 230);
+        
+        ctx.fillText('W', 310, 290);
+        ctx.fillText('A', 260, 340);
+        ctx.fillText('S', 315, 340);
+        ctx.fillText('D', 370, 340);
+        
+        ctx.fillRect(0, 400, 640, 140);
+        
+        ctx.fillStyle = "red";
+
+        ctx.font = font;
+        ctx.fillText('Instrução', 250, 190);
+        
+        ctx.font = mainFont;
+        ctx.fillText('Clique para começar', 70, 480);
+    }
+
+    function telaFimJogo() {
+        
+        ctx.fillStyle = "black";
+        ctx.fillRect(0, 0, 640, 640);
+        
+        ctx.fillStyle = "white";
+
+        ctx.font = mainFont;
+        ctx.fillText('Labirinto-jogo', 140, 100);
+
+        ctx.font = font;
+        ctx.fillText('FIM DE JOGO', 210, 250);
+        
+        ctx.font = smallFont;
+        ctx.fillText('Criado por Gustavo Sachetto', 120, 600);
+        
+        ctx.fillStyle = "red";
+
+        ctx.font = mainFont;
+        ctx.fillText('Obrigado por jogar!', 70, 380);
+    }
+
+    
     function render() {
         ctx.clearRect(0, 0, cnv.width, cnv.height);
         ctx.save();
-        ctx.translate(-cam.x,-cam.y);
+        ctx.translate(-cam.x, -cam.y);
+        ctx.fillStyle = "black";
         for (const linha in cenario) {
             for (const coluna in cenario[linha]) {
                 var elemento = cenario[linha][coluna];
@@ -254,11 +311,24 @@
         ctx.restore();
     }
 
+    
     function loop() {
         update();
         render();
         requestAnimationFrame(loop, cnv);
-        console.log(fimJogo);
+        if (fimJogo === true) {
+            telaFimJogo();
+        }
     }
-    requestAnimationFrame(loop, cnv);
+
+    window.addEventListener('click', function () {
+        inicioJogo();
+    });
+    
+    function inicioJogo() {
+        requestAnimationFrame(loop, cnv);
+    }
+
+    telaInicio();
+     
 }());
