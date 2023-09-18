@@ -5,5 +5,6 @@ Projeto pessoal __criado inteiramente em javascript.__ Esse projeto se trata de 
 __Link:__ https://gustavosachetto.github.io/Labirinto-jogo/index.html
 
 ## Telas:
-*Capa:
+* Capa:
+  
 ![inicio](https://github.com/GustavoSachetto/Labirinto-jogo/assets/136517074/3127bcb0-1bd3-4932-a553-6512877dd336)
