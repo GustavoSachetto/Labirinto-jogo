@@ -1,8 +1,8 @@
 # Labirinto-jogo
 
-Projeto pessoal __criado inteiramente em javascript.__ Esse projeto se trata de um jogo onde elaborei um personagem quadrado, na qual se move através do labirinto, sendo que em todas as paredes ocorre a colisão, menos na linha de chegada.
+Projeto pessoal __criado em Javascript.__ Esse projeto se trata de um jogo onde elaborei um personagem quadrado na qual ele se move através do labirinto, sendo que em todas as paredes ocorre o bloqueio atráves da colisão ocorrida nos elementos/sprites. __O labirinto há somente uma saída.__
 
-__Link:__ https://gustavosachetto.github.io/Labirinto-jogo/index.html
+__Link acesso:__ https://gustavosachetto.github.io/Labirinto-jogo/index.html
 
 ## Telas:
 * __Capa:__
@@ -15,5 +15,4 @@ __Link:__ https://gustavosachetto.github.io/Labirinto-jogo/index.html
 
 * __Fim:__
 
-  
 ![inicio](https://github.com/GustavoSachetto/Labirinto-jogo/assets/136517074/800d3b39-e32e-4f43-a64a-f60cc506720f)
