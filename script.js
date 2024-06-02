@@ -228,7 +228,7 @@
 
     function telaInicio() {
         
-        ctx.fillStyle = "black";
+        ctx.fillStyle = "#1a1a1a";
         ctx.fillRect(0, 0, 640, 640);
         
         ctx.fillStyle = "white";
@@ -246,7 +246,7 @@
         
         ctx.fillRect(0, 400, 640, 140);
         
-        ctx.fillStyle = "red";
+        ctx.fillStyle = "#F03A47";
 
         ctx.font = font;
         ctx.fillText('Instrução', 250, 190);
@@ -257,7 +257,7 @@
 
     function telaFimJogo() {
         
-        ctx.fillStyle = "black";
+        ctx.fillStyle = "#1a1a1a";
         ctx.fillRect(0, 0, 640, 640);
         
         ctx.fillStyle = "white";
@@ -271,7 +271,7 @@
         ctx.font = smallFont;
         ctx.fillText('Criado por Gustavo Sachetto', 120, 600);
         
-        ctx.fillStyle = "red";
+        ctx.fillStyle = "#F03A47";
 
         ctx.font = mainFont;
         ctx.fillText('Obrigado por jogar!', 70, 380);
@@ -282,7 +282,7 @@
         ctx.clearRect(0, 0, cnv.width, cnv.height);
         ctx.save();
         ctx.translate(-cam.x, -cam.y);
-        ctx.fillStyle = "black";
+        ctx.fillStyle = "#1a1a1a";
         for (const linha in cenario) {
             for (const coluna in cenario[linha]) {
                 var elemento = cenario[linha][coluna];
@@ -306,7 +306,7 @@
             }
         }
         
-        ctx.fillStyle = "#f00";
+        ctx.fillStyle = "#F03A47";
         ctx.fillRect(personagem.x, personagem.y, personagem.width, personagem.height);
         ctx.restore();
     }
