@@ -1,7 +1,7 @@
 # Labirinto-jogo
 Projeto pessoal __criado em JavaScript.__ Esse projeto se trata de um jogo onde elaborei um personagem quadrado na qual ele se move através do labirinto, sendo que em todas as paredes ocorre o bloqueio atráves da colisão ocorrida nos elementos/sprites. __O labirinto há somente uma saída.__
 
-* __Link acesso:__ https://gustavosachetto.github.io/Labirinto-jogo/index.html
+* __Link de acesso:__ https://gustavosachetto.github.io/Labirinto-jogo/index.html
 
 ## Desenvolvimento
 Esse projeto usou como base um canva (tag html) processado pelo __JavaScript__, onde para criar a movimentação do jogador e do cenário é executado uma função em loop que renderiza diversos frames 60 vezes por segundo gerando uma ilusão de continuidade (vídeo).
