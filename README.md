@@ -17,7 +17,7 @@ Confira abaixo todos os itens de conhecimento aplicados para realização do pro
 * Estrutura de repetição
 * Observadores 
 
-## Telas
+## Resultado
 
 ### Capa:
 ![inicio](https://github.com/GustavoSachetto/Labirinto-jogo/assets/136517074/3127bcb0-1bd3-4932-a553-6512877dd336)
