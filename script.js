@@ -2,6 +2,8 @@
     var cnv = document.querySelector('canvas');
     var ctx = cnv.getContext('2d');
     
+    var gameRuning = false;
+
     var mainFont = 'bold 48px monospace';
     var font = 'normal 32px Verdana';
     var smallFont = 'normal 26px Verdana';
@@ -314,7 +316,7 @@
     
     function loop() {
         update();
-        render();
+        render();        
         requestAnimationFrame(loop, cnv);
         if (fimJogo === true) {
             telaFimJogo();
@@ -323,10 +325,11 @@
 
     window.addEventListener('click', function () {
         inicioJogo();
+        gameRuning = true;
     });
     
     function inicioJogo() {
-        requestAnimationFrame(loop, cnv);
+        if (!gameRuning) requestAnimationFrame(loop, cnv); 
     }
 
     telaInicio();
